@@ -7,7 +7,7 @@
         //    - Method Signature: void PrintNumbers()
         public static void PrintNumbers()
         {
-            for (int num = 1000; num > +-1001; num--)
+            for (int num = 1000; num >= -1000; num--)
             {
                 Console.WriteLine(num);
             }
@@ -30,7 +30,10 @@
             {
                 Console.WriteLine($"True: {num1} is equal to {num2}.");
             }
-            else Console.WriteLine($"False: {num1} is not equal to {num2}.");
+            else
+            {
+                Console.WriteLine($"False: {num1} is not equal to {num2}.");
+            }
         }
         // 4. Write a method that checks if a given number is even or odd.
         //    - Method Signature: bool IsEven(int number)
@@ -41,7 +44,10 @@
             {
                 Console.WriteLine($"{num} is an even number");
             }
-            else Console.WriteLine($"{num} is not an evan number");
+            else
+            {
+                Console.WriteLine($"{num} is not an evan number");
+            }
         }
         // 5. Write a method that checks if a given number is positive or negative.
         //    - Method Signature: bool IsPositive(int number)
@@ -56,7 +62,10 @@
             {
                 Console.WriteLine("0 is not positive or negative.");
             }
-            else Console.WriteLine($"{num} is a negative number.");
+            else
+            {
+                Console.WriteLine($"{num} is a negative number.");
+            }
         }
         // 6. Write a method that reads the age of a candidate and determines if they are eligible to vote.
         //    - Method Signature: bool CanVote(int age)
@@ -75,7 +84,10 @@
             {
                 Console.WriteLine("Congratulations, You are eligible to vote.");
             }
-            else Console.WriteLine("Unfortunately, you are not eligible to vote");
+            else
+            {
+                Console.WriteLine("Unfortunately, you are not eligible to vote");
+            }
         }
         // Heatin' Up Section:
         // 1. Write a method that checks if an integer (provided by the user) is within the range of -10 to 10.
@@ -94,7 +106,10 @@
             {
                 Console.WriteLine($"{userNumber} is within range.");
             }
-            else Console.WriteLine($"{userNumber} is not within rage.");
+            else
+            {
+                Console.WriteLine($"{userNumber} is not within rage.");
+            }
         }
         // 2. Write a method that displays the multiplication table (from 1 to 12) for a given integer.
         //    - Method Signature: void DisplayMultiplicationTable(int number)
@@ -117,13 +132,13 @@
         // Use various test cases to ensure they work as expected.        
         static void Main(string[] args)
         {
-            //PrintNumbers();
-            //PrintEveryThirdNumber();
-            //AreNumbersEqual(5, 7);
-            //IsEven(18);
-            //IsPositive(0);
-            //CanVote();
-            //IsInRange();
+            PrintNumbers();
+            PrintEveryThirdNumber();
+            AreNumbersEqual(5, 7);
+            IsEven(18);
+            IsPositive(0);
+            CanVote();
+            IsInRange();
             DisplayMultiplicationTable();
         }
     }
